@@ -15,3 +15,6 @@ class Vector:
             s += str(x) + ', '
         s += ']'
         return s
+
+    def __len__(self):
+        return len(self.elements)
