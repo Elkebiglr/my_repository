@@ -18,3 +18,11 @@ class Vector:
 
     def __len__(self):
         return len(self.elements)
+    
+
+    def __add__(self, other):
+        assert len(self) == len(other)
+        sums = []
+        for a, b in zip(self.elements, other.elements):
+            sums.append(a + b)
+        return Vector(*sums)    
