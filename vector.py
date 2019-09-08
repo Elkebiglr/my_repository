@@ -18,7 +18,6 @@ class Vector:
 
     def __len__(self):
         return len(self.elements)
-    
 
     def __add__(self, other):
         assert len(self) == len(other)
