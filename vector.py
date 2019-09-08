@@ -25,4 +25,10 @@ class Vector:
         sums = []
         for a, b in zip(self.elements, other.elements):
             sums.append(a + b)
-        return Vector(*sums)    
+        return Vector(*sums)
+    
+    def __abs__(self):
+        c = 0
+        for x in self.elements:
+            c += x ** 2
+        return c ** 0.5
